@@ -1,33 +1,33 @@
 import React from "react";
-
 // material-ui imports
 import MenuItem from "@material-ui/core/MenuItem";
-import Grid from "@material-ui/core/Grid";
 
 
-function MainPage() {
+function MainPage(props) {
   return (
-    <div className="red">
+    <div className="main-grid" style={{display:'flex', justifyContent: "space-between"}}>
+        <div className="" style={{height:'auto', width:'auto', background: 'white'}}>
+            <h2 className="logoN logo">N</h2>
+            <h3 className="logo">NASRIN</h3>
 
-      <Grid
-        container
-        justify="flex-end"
-        alignContent="space-around"
-        alignItems="center"
-      >
-        <Grid item xs={1}>
-          <MenuItem class="center-menu-item">home</MenuItem>
-        </Grid>
-        <Grid item xs={1}>
-          <MenuItem class="center-menu-item">about me</MenuItem>
-        </Grid>
-        <Grid item xs={1}>
-          <MenuItem class="center-menu-item">contact me</MenuItem>
-        </Grid>
-        <Grid item xs={1}>
-          <MenuItem class="center-menu-item">skills</MenuItem>
-        </Grid>
-      </Grid>
+            <div className="text-degree"><a href="#" className="text-degree" >skills</a></div>
+            <div className="text-degree"><a className="text-degree" href="#">portfolio</a></div>
+        </div>
+      <div style={{width:"100%"}}>
+        <div className="menu" style={{display: "flex", justifyContent: 'baseline', height:60}}>
+            <MenuItem className="center-menu-item">contact us</MenuItem>
+            <MenuItem className="center-menu-item">about me</MenuItem>
+            <MenuItem className="center-menu-item">home</MenuItem>
+        </div>
+        <div className = "image">
+            <div className="image-text">
+                <h1>Hello</h1>
+                <h1>I'M Nasrin Moshayedi</h1>
+                <h2>Frontend Developer</h2>
+            </div>
+        </div>
+      </div>
+
     </div>
   );
 }
